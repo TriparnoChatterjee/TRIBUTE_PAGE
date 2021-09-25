@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.About__description {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.About__heading {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  background: rgb(255, 27, 103);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 8px;
+}
+.para_1,
+.para_2,
+.para_3 ,
+.para_4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.86rem;
+  background: rgb(248, 211, 240);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.para_1 > p::first-letter {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+.para_2 > p::first-letter {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+.para_3 > p::first-letter {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+.para_4 > p::first-letter {
+    text-transform: capitalize;
+    font-size: 2rem;
+  }
+@media (min-width: 40rem) {
+  .About__heading {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.8rem;
+    background: rgb(255, 27, 103);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 8px;
+  }
+  .para_1, .para_2 ,.para_3 ,.para_4 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+  }
+  .para_1:hover {
+    box-shadow: 0 8px 8px -4px rgb(148, 165, 170);
+  }
+  .para_2:hover {
+    box-shadow: 0 8px 8px -4px rgb(148, 165, 170);
+  }
+  .para_3:hover {
+    box-shadow: 0 8px 8px -4px rgb(148, 165, 170);
+  }
+  .para_4:hover {
+    box-shadow: 0 8px 8px -4px rgb(148, 165, 170);
+  }
+}

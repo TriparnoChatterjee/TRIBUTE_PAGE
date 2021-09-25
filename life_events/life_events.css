@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+main {
+  margin-top: 5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  border: 1px solid black;
+  height: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.row_event_block {
+  display: grid;
+  grid-template-columns: repeat(8 ,1fr);
+  grid-template-areas:
+    "icon date"
+    "event_bar event "
+    "event_bar event "
+    "event_bar event "
+    "event_bar ..";
+  /* column-gap: 1.4rem; */
+  justify-content: start;
+  
+}
+.life_icon--1931 {
+  justify-self: center;
+  grid-area: icon;
+  width: 2.89rem;
+  height: 2.89rem;
+  border-radius: 50%;
+  background: url("../svg/life_events_icons/1931_icon.svg");
+  background-repeat: no-repeat;
+  background-color: rgb(230, 121, 252);
+  background-position: center;
+  background-size: contain;
+}
+.life_icon--generic{
+  justify-self: center;
+  grid-area: icon;
+  width: 2.89rem;
+  height: 2.89rem;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-color: rgb(230, 121, 252);
+  background-position: center;
+  background-size: contain;
+}
+.event_bar {
+  grid-area: event_bar;
+  grid-column: 1;
+  background: rgb(201, 197, 200);
+  width: 0.8rem;
+  border-radius: 8px;
+justify-self: center;
+
+}
+.year {
+
+  grid-area: date;
+  font-family: "Montserrat", sans-serif;
+  align-self: center;
+  font-weight: 600;
+  font-size: 1rem;
+  grid-column: span 2;
+}
+.column_event {
+  grid-area: event;
+  grid-column: span 7;
+  display: flex;
+  flex-direction: column;
+  background: rgb(255, 177, 33);
+  padding: 8px;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.column_event--heading {
+
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.25rem;
+ 
+}
+.column_event--detail {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+}
+.column_event--image-generic {
+  align-self: flex-start;
+  width: 10rem;
+  height: 10rem;
+  background: url("../images/life_events/1931.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 85% 75%;
+  border-radius: 0.5rem;
+}
+.column_event--image-1955 {
+  align-self: flex-start;
+  width: 10rem;
+  height: 10rem;
+  background: url("../images/life_events/1955.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 85% 75%;
+  border-radius: 0.5rem;
+}
+.column_event--image-1963{
+  align-self: flex-start;
+  width: 10rem;
+  height: 10rem;
+  background: url("../images/life_events/1963.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 85% 75%;
+  border-radius: 0.5rem;
+}
+.column_event--image-1969{
+  align-self: flex-start;
+  width: 10rem;
+  height: 10rem;
+  background: url("../images/life_events/1969.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 85% 75%;
+  border-radius: 0.5rem;
+}
+.column_event--image-1999{
+  align-self: flex-start;
+  width: 10rem;
+  height: 15rem;
+  background: url("../images/life_events/1999.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 85% 75%;
+  border-radius: 0.5rem;
+}
+@media (min-width: 40rem) {
+  .year {
+    grid-area: date;
+    font-family: "Montserrat", sans-serif;
+    align-self: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    grid-column: span 2;
+  }
+  .column_event--heading {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.4rem;
+  }
+  .column_event--image-generic {
+    align-self: flex-start;
+    width: 25rem;
+    height: 15rem;
+    background: url("../images/life_events/1931.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 85% 75%;
+    border-radius: 0.5rem;
+  }
+  .column_event--image-1955 {
+    align-self: flex-start;
+    width: 25rem;
+    height: 15rem;
+    background: url("../images/life_events/1955.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 85% 75%;
+    border-radius: 0.5rem;
+  }
+  .column_event--image-1963{
+    align-self: flex-start;
+    width: 25rem;
+    height: 15rem;
+    background: url("../images/life_events/1963.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 85% 75%;
+    border-radius: 0.5rem;
+  }
+  .column_event--image-1969{
+    align-self: flex-start;
+    width: 25rem;
+    height: 15rem;
+    background: url("../images/life_events/1969.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 85% 75%;
+    border-radius: 0.5rem;
+  }
+  .column_event--image-1999{
+    align-self: flex-start;
+    width: 15rem;
+    height: 20rem;
+    background: url("../images/life_events/1999.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 85% 75%;
+    border-radius: 0.5rem;
+  }
+  .column_event:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+}

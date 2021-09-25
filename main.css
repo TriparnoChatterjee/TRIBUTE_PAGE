@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@500&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+main {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: 2px solid black;
+  height: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.tribute-head__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 1%;
+  height: 40vh;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+  border: 1px solid palegreen;
+  background-image: url("images/intro_picture.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.78;
+  padding-top: 7%;
+}
+.tribute-head__container--name {
+  font-size: 1rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.tribute-head__container--short_name{
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+}
+.tribute-head__container--tag-name{
+    font-size: 1rem;
+    color: white;
+    font-family: 'Kaisei HarunoUmi', serif;
+    background-color: rgb(243, 102, 8);
+    padding: 0.1rem;
+    border-radius: 10px;
+}
+@media (min-width: 40rem) {
+  .tribute-head__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 50vh;
+    padding-left: 1%;
+    padding-top: 0%;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+    border: 1px solid palegreen;
+    background-image: url("images/intro_picture.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 20% 28%;
+    opacity: 0.7;
+  }
+  .tribute-head__container--name {
+    font-size: 1.8rem;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+  }
+  .tribute-head__container--short_name{
+    font-size: 1.6rem;
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+}
+.tribute-head__container--tag-name{
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Kaisei HarunoUmi', serif;
+    background-color: rgb(243, 102, 8);
+    padding: 0.1rem;
+    border-radius: 10px;
+}
+}
+@media (min-width : 60rem) {
+    .tribute-head__container--name {
+        font-size: 2.8rem;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+      }
+      .tribute-head__container--short_name{
+        font-size: 2rem;
+        color: white;
+        font-family: 'Architects Daughter', cursive;
+    }
+    .tribute-head__container--tag-name{
+        font-size: 1.3rem;
+        color: white;
+        font-family: 'Kaisei HarunoUmi', serif;
+        background-color: rgb(243, 102, 8);
+        padding: 0.1rem;
+        border-radius: 10px;
+    }
+}
